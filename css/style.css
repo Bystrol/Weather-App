@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -28,28 +30,38 @@ main .container1 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40vw;
-  height: 40vh;
   background-color: #04BFAD;
 }
 
 main .container1 h1 {
   font-size: 3vh;
-  line-height: 10vh;
+  margin-top: 3vh;
+  line-height: 5vh;
+  text-transform: uppercase;
 }
 
 main .container1 .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-color: red;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #04BFAD;
 }
 
 main .container1 .left-side button {
-  font-size: 24px;
-  width: 3rem;
-  height: 3rem;
+  font-size: 1.5rem;
+  height: 3vw;
+  width: 3vw;
   color: white;
   background-color: #027373;
-  border-radius: 20%;
   border: none;
 }
 
@@ -59,13 +71,71 @@ main .container1 .left-side button:hover {
   cursor: pointer;
 }
 
+main .container1 .left-side input {
+  height: 3vw;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  padding: 20px 10px;
+  outline: none;
+}
+
+main .container1 .left-side nav {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .container1 .left-side nav ul {
+  list-style-type: none;
+}
+
+main .container1 .left-side nav ul li {
+  font-size: 1rem;
+}
+
+main .container1 .left-side nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 main .container1 .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background-color: green;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #04BFAD;
 }
 
 main .container1 .right-side img {
-  width: 200px;
+  width: 10vw;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .container1 .right-side .parameters1 .temperature {
+  font-size: 3.5rem;
+}
+
+main .container1 .right-side .parameters1 .weather {
+  font-size: 1rem;
+}
+
+main .container1 .right-side .parameters2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container1 .right-side .parameters2 p {
+  margin-right: 2vw;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

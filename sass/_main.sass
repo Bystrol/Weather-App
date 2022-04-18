@@ -5,28 +5,62 @@ main
     flex-wrap: wrap
     justify-content: center
     width: 40vw
-    height: 40vh
+    // height: 40vh
     background-color: #04BFAD
     h1
       font-size: 3vh
-      line-height: 10vh
+      margin-top: 3vh
+      line-height: 5vh
+      text-transform: uppercase
     .left-side
+      display: flex
+      flex-wrap: wrap
       flex-basis: 50%
-      background-color: red
+      justify-content: space-around
+      align-items: center
+      background-color: #04BFAD
       button
-        font-size: 24px
-        width: 3rem
-        height: 3rem
+        font-size: 1.5rem
+        height: 3vw
+        width: 3vw
         color: white
         background-color: #027373
-        border-radius: 20%
         border: none
         &:hover
           background-color: white
           color: #027373
           cursor: pointer
+      input
+        height: 3vw
+        flex-basis: 75%
+        padding: 20px 10px
+        outline: none
+      nav
+        align-self: flex-start
+        ul
+          list-style-type: none
+          li
+            font-size: 1rem
+            &:hover
+              text-decoration: underline
+              cursor: pointer
     .right-side
+      display: flex
+      flex-wrap: wrap
       flex-basis: 50%
-      background-color: green
+      align-items: center
+      justify-content: center
+      background-color: #04BFAD
       img
-        width: 200px
+        width: 10vw
+        align-self: flex-start
+      .parameters1
+        .temperature
+          font-size: 3.5rem
+        .weather
+          font-size: 1rem
+      .parameters2
+        display: flex
+        p
+          margin-right: 2vw
+          text-align: center
