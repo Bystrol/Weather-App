@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikacja pogodowa</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2313714e75.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <div class="working area">
-            <h1 class="city"></h1>
-            <h2>Sprawdź pogodę dla swojego miasta</h2>
-            <button></button>
-            <input type="text" placeholder="Wpisz nazwę miasta...">
-            <img src="" alt="">
-            <p class="temperature"></p>
-            <p class="weather"></p>
-            <div>
-            <p>Ciśnienie:</p>
-            <p>Wiatr:</p>
-            <p>Wilgotność:</p>
-            </div>
-            <div>
-                <p class="pressure"></p>
-                <p class="wind"></p>
-                <p class="humidity"></p>
-            </div>
+        <div class="container1">
+            <h1>Sprawdź pogodę dla swojego miasta</h1>
+                <div class="left-side">
+                    
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Wpisz nazwę miasta...">
+                    <nav>
+                        <ul>
+                            <li>Warszawa</li>
+                            <li>Poznań</li>
+                            <li>Wrocław</li>
+                            <li>Kraków</li>
+                            <li>Bydgoszcz</li>
+                            <li>Gdańsk</li>
+                            <li>Łódź</li>
+                            <li>Katowice</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <img src="/img/sun-g4b13ec0d3_1280.png" alt="">
+                    <p class="temperature"></p>
+                    <p class="weather"></p>
+                    <div>
+                    <p>Ciśnienie:</p>
+                    <p>Wiatr:</p>
+                    <p>Wilgotność:</p>
+                    </div>
+                    <div>
+                        <p class="pressure"></p>
+                        <p class="wind"></p>
+                        <p class="humidity"></p>
+                    </div>
+                </div>
         </div>
     </main>
     <footer>

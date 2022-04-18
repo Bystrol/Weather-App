@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40vw;
+  height: 40vh;
+  background-color: #04BFAD;
+}
+
+main .container1 h1 {
+  font-size: 3vh;
+  line-height: 10vh;
+}
+
+main .container1 .left-side {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: red;
+}
+
+main .container1 .left-side button {
+  font-size: 24px;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  background-color: #027373;
+  border-radius: 20%;
+  border: none;
+}
+
+main .container1 .left-side button:hover {
+  background-color: white;
+  color: #027373;
+  cursor: pointer;
+}
+
+main .container1 .right-side {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: green;
+}
+
+main .container1 .right-side img {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */
