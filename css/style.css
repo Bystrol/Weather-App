@@ -34,8 +34,8 @@ main .container1 {
 }
 
 main .container1 h1 {
-  font-size: 3vh;
-  margin-top: 3vh;
+  font-size: 2rem;
+  margin: 2vh 0;
   line-height: 5vh;
   text-transform: uppercase;
 }
@@ -114,8 +114,14 @@ main .container1 .right-side {
   background-color: #04BFAD;
 }
 
+main .container1 .right-side .city-name {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 2rem;
+}
+
 main .container1 .right-side img {
-  width: 10vw;
+  width: 12vw;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -135,6 +141,17 @@ main .container1 .right-side .parameters2 {
 }
 
 main .container1 .right-side .parameters2 p {
+  margin-right: 2vw;
+  text-align: center;
+}
+
+main .container1 .right-side .parameters3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container1 .right-side .parameters3 p {
   margin-right: 2vw;
   text-align: center;
 }
