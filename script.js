@@ -2,8 +2,8 @@ const input = document.querySelector('input');
 const btn = document.querySelector('button');
 const errorText = document.querySelector('.error-text');
 const cityName = document.querySelector('.city-name');
-const list1 = document.querySelector('ul:nth-of-type(1)');
-const list2 = document.querySelector('ul:nth-of-type(2)');
+const list1 = document.querySelector('.list1');
+const list2 = document.querySelector('.list2');
 const img = document.querySelector('img');
 const pressure = document.querySelector('.pressure');
 const wind = document.querySelector('.wind');
@@ -62,5 +62,12 @@ const enterCheck = (e) =>{
     }
 }
 
+const cityClick = (e) => {
+    input.value = e.target.textContent;
+    getWeather();
+}
+
 btn.addEventListener('click', getWeather);
 input.addEventListener('keyup', enterCheck);
+list1.addEventListener('click', cityClick);
+list2.addEventListener('click', cityClick);
