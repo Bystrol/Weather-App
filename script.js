@@ -10,6 +10,7 @@ const wind = document.querySelector('.wind');
 const humidity = document.querySelector('.humidity');
 const temperature = document.querySelector('.temperature');
 const feelsLike = document.querySelector('.feels_like');
+const weatherInfo = document.querySelector('.weather');
 
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const API_KEY = '&appid=638c587993b9533b6d691b999b840c52';
@@ -32,18 +33,25 @@ const getWeather = () => {
         
         if(weatherID >= 200 && weatherID < 300){
             img.setAttribute('src', '/img/thunderstorm.png');
+            weatherInfo.textContent = 'Burza z piorunami';
         } else if(weatherID >= 300 && weatherID < 500){
             img.setAttribute('src', '/img/drizzle.png');
+            weatherInfo.textContent = 'Mżawka';
         } else if(weatherID >= 500 && weatherID < 600){
             img.setAttribute('src', '/img/rain.png');
+            weatherInfo.textContent = 'Deszczowo';
         } else if(weatherID >= 600 && weatherID < 700){
             img.setAttribute('src', '/img/snow.png');
+            weatherInfo.textContent = 'Opady śniegu';
         } else if(weatherID >= 700 && weatherID < 800){
             img.setAttribute('src', '/img/atmosphere.png');
+            weatherInfo.textContent = 'Mgliście';
         } else if(weatherID == 800){
             img.setAttribute('src', '/img/clear.png');
+            weatherInfo.textContent = 'Słonecznie';
         } else if(weatherID > 800){
             img.setAttribute('src', '/img/clouds.png');
+            weatherInfo.textContent = 'Zachmurzenie';
         }
     }).catch(() => errorText.textContent = 'Wpisz poprawną nazwę!')
 }
