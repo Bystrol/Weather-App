@@ -32,7 +32,7 @@ main .container1 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40vw;
-  background-color: #04BFAD;
+  background-color: #73A9D9;
 }
 
 main .container1 h1 {
@@ -55,7 +55,6 @@ main .container1 .left-side {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #04BFAD;
 }
 
 main .container1 .left-side button {
@@ -63,13 +62,13 @@ main .container1 .left-side button {
   height: 3vw;
   width: 3vw;
   color: white;
-  background-color: #027373;
+  background-color: #055BA6;
   border: none;
 }
 
 main .container1 .left-side button:hover {
   background-color: white;
-  color: #027373;
+  color: #055BA6;
   cursor: pointer;
 }
 
@@ -115,7 +114,6 @@ main .container1 .right-side {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #04BFAD;
 }
 
 main .container1 .right-side .city-name {
