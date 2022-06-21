@@ -74,8 +74,6 @@ main .container1 .left-side button:hover {
 
 main .container1 .left-side input {
   height: 3vw;
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
   padding: 20px 10px;
   margin: 0 10px;
   outline: none;
@@ -148,6 +146,10 @@ main .container1 .right-side .parameters2 {
       justify-content: space-around;
 }
 
+main .container1 .right-side .parameters2 p {
+  margin-right: 2px;
+}
+
 main .container1 .right-side .parameters3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,5 +167,83 @@ footer {
   bottom: 0;
   background-color: #73A9D9;
   text-align: right;
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 h1 {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .left-side {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .left-side button {
+    font-size: 3vh;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .left-side input {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    padding: 10px;
+    font-size: 10px;
+    height: 5vh;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .left-side nav ul li {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .right-side .city-name {
+    font-size: 25px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .right-side img {
+    width: 100px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .right-side .parameters1 .temperature {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  main .container1 .right-side .parameters2 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 480px) {
+  footer .footer p {
+    font-size: 10px;
+    margin-right: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

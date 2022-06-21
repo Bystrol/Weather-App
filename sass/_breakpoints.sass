@@ -1,0 +1,66 @@
+@mixin sm
+  @media (min-width: 0) and (max-width: 480px)
+    @content
+
+@mixin md
+  @media (min-width: 480px) and (max-width: 720px)
+    @content
+
+@mixin lg
+  @media (min-width: 720px) and (max-width: 1200px)
+    @content
+
+@mixin xl
+  @media (min-width: 1200px) and (max-width: 1600px)
+    @content
+
+main
+  .container1
+    @include sm
+      width: 80vw
+    h1
+      @include sm
+        font-size: 11px
+    .left-side
+      @include sm
+        flex-basis: 90%
+      button
+        @include sm
+          font-size: 3vh
+          height: 5vh
+          width: 5vh
+      input
+        @include sm
+          flex-basis: 60%
+          padding: 10px
+          font-size: 10px
+          height: 5vh
+      nav
+        ul
+          li
+            @include sm
+              font-size: 14px
+    .right-side
+      .city-name
+        @include sm
+          font-size: 25px
+          flex-basis: 100%
+          text-align: center
+      img
+        @include sm
+          width: 100px
+          margin-right: 20px
+      .parameters1
+        .temperature
+          @include sm
+            font-size: 40px
+      .parameters2
+        @include sm
+          font-size: 16px
+
+footer
+  .footer
+    p
+      @include sm
+        font-size: 10px
+        margin-right: 5px

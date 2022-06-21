@@ -11,6 +11,9 @@ const humidity = document.querySelector('.humidity');
 const temperature = document.querySelector('.temperature');
 const feelsLike = document.querySelector('.feels_like');
 const weatherInfo = document.querySelector('.weather');
+const parameters2_1 = document.querySelector('.parameters2 p:nth-child(1)');
+const parameters2_2 = document.querySelector('.parameters2 p:nth-child(2)');
+const parameters2_3 = document.querySelector('.parameters2 p:nth-child(3)');
 
 const API_LINK = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const API_KEY = '&appid=638c587993b9533b6d691b999b840c52';
@@ -24,6 +27,9 @@ const getWeather = () => {
         console.log(res.data);
         const weatherID = res.data.weather[0].id;
 
+        parameters2_1.textContent = "Odczuwalna:";
+        parameters2_2.textContent = "Ciśnienie:";
+        parameters2_3.textContent = "Wilgotność:";
         cityName.textContent = res.data.name;
         pressure.textContent = res.data.main.pressure + ' hPa';
         humidity.textContent = res.data.main.humidity + ' %';
