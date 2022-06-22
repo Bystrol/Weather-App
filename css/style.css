@@ -176,7 +176,7 @@ main .container1 .right-side .parameters3 {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 2vh;
   bottom: 0;
