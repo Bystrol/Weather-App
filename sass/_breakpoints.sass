@@ -1,9 +1,9 @@
 @mixin sm
-  @media (min-width: 0) and (max-width: 480px)
+  @media (min-width: 0) and (max-width: 389px)
     @content
 
 @mixin md
-  @media (min-width: 480px) and (max-width: 720px)
+  @media (min-width: 390px) and (max-width: 720px)
     @content
 
 @mixin lg
@@ -18,14 +18,24 @@ main
   .container1
     @include sm
       width: 80vw
+    @include md
+      width: 80vw
     h1
       @include sm
         font-size: 11px
+      @include md
+        font-size: 13px
     .left-side
       @include sm
         flex-basis: 90%
+      @include md
+        flex-basis: 90%
       button
         @include sm
+          font-size: 3vh
+          height: 5vh
+          width: 5vh
+        @include md
           font-size: 3vh
           height: 5vh
           width: 5vh
@@ -35,32 +45,71 @@ main
           padding: 10px
           font-size: 10px
           height: 5vh
+        @include md
+          flex-basis: 70%
+          padding: 10px
+          font-size: 12px
+          height: 5vh
+      .error-text
+        @include sm
+          font-size: 12px
+          flex-basis: 100%
+          text-align: center
+          margin-top: 10px
+        @include md
+          font-size: 14px
+          flex-basis: 100%
+          text-align: center
+          margin-top: 10px
       nav
         ul
           li
             @include sm
               font-size: 14px
+              margin-bottom: 2px
+            @include md
+              font-size: 16px
+              margin-bottom: 2px
     .right-side
       .city-name
         @include sm
           font-size: 25px
           flex-basis: 100%
           text-align: center
+        @include md
+          font-size: 30px
+          flex-basis: 100%
+          text-align: center
       img
         @include sm
+          width: 100px
+          margin-right: 20px
+        @include md
           width: 100px
           margin-right: 20px
       .parameters1
         .temperature
           @include sm
             font-size: 40px
+          @include md
+            font-size: 44px
+        .weather
+          @include md
+            font-size: 20px
       .parameters2
-        @include sm
-          font-size: 16px
+        p
+          @include sm
+            font-size: 16px
+          @include md
+            font-size: 16px
+            margin-right: 15px
 
 footer
   .footer
     p
       @include sm
         font-size: 10px
+        margin-right: 5px
+      @include md
+        font-size: 12px
         margin-right: 5px

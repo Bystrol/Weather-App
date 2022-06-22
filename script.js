@@ -36,6 +36,7 @@ const getWeather = () => {
         temperature.textContent = Math.floor(res.data.main.temp) + ' °C';
         feelsLike.textContent = Math.floor(res.data.main.feels_like) + ' °C';
         input.value = '';
+        errorText.textContent = '';
         
         if(weatherID >= 200 && weatherID < 300){
             img.setAttribute('src', '/img/thunderstorm.png');
