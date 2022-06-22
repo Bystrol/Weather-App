@@ -75,9 +75,18 @@ main .container1 .left-side button:hover {
 
 main .container1 .left-side input {
   height: 3vw;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
   padding: 20px 10px;
   margin: 0 10px;
   outline: none;
+}
+
+main .container1 .left-side p {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 main .container1 .left-side nav {
@@ -120,6 +129,10 @@ main .container1 .right-side .city-name {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 2rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 main .container1 .right-side img {
@@ -130,6 +143,7 @@ main .container1 .right-side img {
 
 main .container1 .right-side .parameters1 .temperature {
   font-size: 3.5rem;
+  text-align: center;
 }
 
 main .container1 .right-side .parameters1 .weather {
@@ -188,6 +202,12 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 {
+    width: 40vw;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 h1 {
     font-size: 11px;
@@ -206,6 +226,12 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 h1 {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .left-side {
     -ms-flex-preferred-size: 90%;
@@ -227,6 +253,13 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .left-side {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .left-side button {
     font-size: 3vh;
@@ -244,6 +277,14 @@ footer {
 }
 
 @media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .left-side button {
+    font-size: 3vh;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
   main .container1 .left-side button {
     font-size: 3vh;
     height: 5vh;
@@ -281,6 +322,15 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .left-side input {
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+    height: 5vh;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .left-side .error-text {
     font-size: 12px;
@@ -311,6 +361,16 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .left-side .error-text {
+    font-size: 12px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .left-side nav ul li {
     font-size: 14px;
@@ -328,6 +388,13 @@ footer {
 @media (min-width: 720px) and (max-width: 1023px) {
   main .container1 .left-side nav ul li {
     font-size: 26px;
+    margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .left-side nav ul li {
+    font-size: 14px;
     margin-bottom: 2px;
   }
 }
@@ -366,6 +433,15 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side .city-name {
+    font-size: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .right-side img {
     width: 100px;
@@ -387,6 +463,13 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side img {
+    width: 80px;
+    margin-right: 5px;
+  }
+}
+
 @media (min-width: 0) and (max-width: 389px) {
   main .container1 .right-side .parameters1 .temperature {
     font-size: 40px;
@@ -405,6 +488,12 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side .parameters1 .temperature {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side .parameters1 .weather {
     font-size: 20px;
@@ -414,6 +503,12 @@ footer {
 @media (min-width: 720px) and (max-width: 1023px) {
   main .container1 .right-side .parameters1 .weather {
     font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side .parameters1 .weather {
+    font-size: 15px;
   }
 }
 
@@ -437,9 +532,22 @@ footer {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side .parameters2 p {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+}
+
 @media (min-width: 720px) and (max-width: 1023px) {
   main .container1 .right-side .parameters3 p {
     font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  main .container1 .right-side .parameters3 p {
+    font-size: 12px;
   }
 }
 
@@ -460,6 +568,13 @@ footer {
 @media (min-width: 720px) and (max-width: 1023px) {
   footer .footer p {
     font-size: 22px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  footer .footer p {
+    font-size: 10px;
     margin-right: 5px;
   }
 }
