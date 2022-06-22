@@ -176,7 +176,13 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
+  main .container1 {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
   main .container1 {
     width: 80vw;
   }
@@ -188,9 +194,15 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 h1 {
     font-size: 13px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 h1 {
+    font-size: 22px;
   }
 }
 
@@ -201,7 +213,14 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
+  main .container1 .left-side {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
   main .container1 .left-side {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
@@ -216,7 +235,15 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
+  main .container1 .left-side button {
+    font-size: 3vh;
+    height: 5vh;
+    width: 5vh;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
   main .container1 .left-side button {
     font-size: 3vh;
     height: 5vh;
@@ -234,12 +261,22 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .left-side input {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     padding: 10px;
     font-size: 12px;
+    height: 5vh;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .left-side input {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding: 10px;
+    font-size: 20px;
     height: 5vh;
   }
 }
@@ -254,13 +291,23 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .left-side .error-text {
     font-size: 14px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     text-align: center;
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .left-side .error-text {
+    font-size: 22px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
 }
 
@@ -271,10 +318,24 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .left-side nav ul li {
     font-size: 16px;
     margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .left-side nav ul li {
+    font-size: 26px;
+    margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -287,9 +348,18 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side .city-name {
     font-size: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side .city-name {
+    font-size: 50px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     text-align: center;
@@ -303,10 +373,17 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side img {
     width: 100px;
     margin-right: 20px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side img {
+    width: 200px;
+    margin-right: 40px;
   }
 }
 
@@ -316,15 +393,27 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side .parameters1 .temperature {
     font-size: 44px;
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side .parameters1 .temperature {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side .parameters1 .weather {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side .parameters1 .weather {
+    font-size: 30px;
   }
 }
 
@@ -334,10 +423,23 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   main .container1 .right-side .parameters2 p {
     font-size: 16px;
     margin-right: 15px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side .parameters2 p {
+    font-size: 26px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  main .container1 .right-side .parameters3 p {
+    font-size: 22px;
   }
 }
 
@@ -348,9 +450,16 @@ footer {
   }
 }
 
-@media (min-width: 390px) and (max-width: 720px) {
+@media (min-width: 390px) and (max-width: 719px) {
   footer .footer p {
     font-size: 12px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  footer .footer p {
+    font-size: 22px;
     margin-right: 5px;
   }
 }
