@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplikacja pogodowa</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2313714e75.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2313714e75.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <main>
-        <div class="container1">
-            <h1>Sprawdź pogodę dla swojego miasta</h1>
-                <div class="left-side">
-                    <input type="text" placeholder="Wpisz nazwę miasta...">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <p class="error-text"></p>
-                    <nav>
-                        <ul class="list1">
-                            <li>Warszawa</li>
-                            <li>Poznań</li>
-                            <li>Wrocław</li>
-                            <li>Kraków</li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul class="list2">
-                            <li>Bydgoszcz</li>
-                            <li>Gdańsk</li>
-                            <li>Łódź</li>
-                            <li>Katowice</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="right-side">
-                    <p class="city-name"></p>
-                    <img src="" alt="">
-                    <div class="parameters1">
-                        <p class="temperature"></p>
-                        <p class="weather"></p>
-                    </div>
-                    <div class="parameters2">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="parameters3">
-                        <p class="feels_like"></p>
-                        <p class="pressure"></p>
-                        <p class="humidity"></p>
-                    </div>
-                </div>
+      <div class="container1">
+        <h1>Check the current weather in your city</h1>
+        <div class="left-side">
+          <input type="text" placeholder="Enter name of the city..." />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <p class="error-text"></p>
+          <nav>
+            <ul class="list1">
+              <li>Warszawa</li>
+              <li>Poznań</li>
+              <li>Wrocław</li>
+              <li>Kraków</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="list2">
+              <li>Bydgoszcz</li>
+              <li>Gdańsk</li>
+              <li>Łódź</li>
+              <li>Katowice</li>
+            </ul>
+          </nav>
         </div>
+        <div class="right-side">
+          <p class="city-name"></p>
+          <img src="" alt="" />
+          <div class="parameters1">
+            <p class="temperature"></p>
+            <p class="weather"></p>
+          </div>
+          <div class="parameters2">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="parameters3">
+            <p class="feels_like"></p>
+            <p class="pressure"></p>
+            <p class="humidity"></p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer">
-            <p>&copy Michał Bystryk</p>
-        </div>
+      <div class="footer">
+        <p>&copy Michał Bystryk</p>
+      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

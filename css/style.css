@@ -136,7 +136,9 @@ main .container1 .right-side .city-name {
 }
 
 main .container1 .right-side img {
-  width: 12vw;
+  width: 8vw;
+  margin-right: 20px;
+  margin-bottom: 20px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
